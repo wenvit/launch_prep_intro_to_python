@@ -11,7 +11,7 @@ counter = 0  # must initialize counter first
 
 def increment_counter():
     global counter # this tells python to reference global counter
-    counter += 1   # reassigns counter to counter + 1
+    counter += 1   # reassigns global counter to counter + 1
 
 print(counter)                # 0
 

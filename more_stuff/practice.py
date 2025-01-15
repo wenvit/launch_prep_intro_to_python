@@ -99,20 +99,21 @@
 
 ## Example using global greeting statement 
 
-# greeting = 'Salutations'
+greeting = 'Salutations'
 
-# def well_howdy(who):
-    
-#     global greeting  # this tells function that local greeting will override global
-#     greeting = 'Howdy'
-#     print(f'{greeting}, {who}')
+def well_howdy(who):
+# the global greeting line tells python that the reassignment of greeting to
+# 'Howdy' within the function will update the global value of greeting
+    global greeting  
+    greeting = 'Howdy'
+    print(f'{greeting}, {who}')
 
-# well_howdy('Angie')
-# print(greeting)
+well_howdy('Angie')
+print(greeting)
 
-def set_pi():
-    global pi
-    pi = 3.1415
+# def set_pi():
+#     global pi
+#     pi = 3.1415
 
-set_pi()
-print(pi)
+# set_pi()
+# print(pi)
