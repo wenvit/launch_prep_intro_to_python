@@ -7,10 +7,12 @@
 # Use a single expression if you can to set balance to the correct value.
 
 initial_balance = 1000
-interest_rate = 0.05
-interest_multiplier = 1 + interest_rate
 
-balance = initial_balance * 1.05 * 1.05 * 1.05 * 1.05 * 1.05
+# one way
+#balance = initial_balance * 1.05 * 1.05 * 1.05 * 1.05 * 1.05
+
+# another way
+balance = initial_balance * 1.05**5
 
 print(balance)
 
